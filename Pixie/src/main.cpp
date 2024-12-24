@@ -1,6 +1,8 @@
 #include "engine/window/window.h"
 #include "engine/render/render.h"
 #include "engine/texture/texture.h"
+
+#include "engine/util/types.h"
 #include <iostream>
 
 int main(int argc, char* argv[]) {
@@ -29,7 +31,7 @@ int main(int argc, char* argv[]) {
         window.handleEvents();
 
         // Clear the screen with a chosen draw color (e.g., red)
-        renderer.setDrawColor(255, 0, 0, 255);
+        renderer.setDrawColor(RED);
         renderer.clear();
 
         // Render the loaded texture at (x, y) = (100, 100) with size 64x64
